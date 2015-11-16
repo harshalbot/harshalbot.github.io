@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-Hey guys. This is Harshal Gupta. 21 years old || Software Engineer(Learning) || Python enthusiast || UI student || Scripting my way.
+Hey guys. This is Harshal Gupta. 21 years old || Software Engineer(Aspiring) || Python enthusiast || UI student || Scripting my way.
 
 I sometimes blog about interesting things that I find whilst my learning. Sometimes I share some of my dailyUI projects (if they turn out right). 
 
