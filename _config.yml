@@ -1,19 +1,19 @@
-title:            Scribble
+title:            Harshal Gupta
 description:      A jekyll theme. Because I scribble.
 url:              # Site url, without a slash at the end.
-signoff:          # Your name.
+signoff:          # Harshal.
 disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
 facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
 google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
 
 links:
-  - name:         About
+  - name:         Hi!!
     url:          /about
   - name:         Blog
-    url:          http://muan.co
+    url:          harshalbot.github.io/archive.html
     external:     true
   - name:         GitHub
-    url:          http://github.com/muan
+    url:          http://github.com/harshalbot
     external:     true
 highlighter:      pygments
 permalink:        pretty
