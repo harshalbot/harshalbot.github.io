@@ -10,7 +10,7 @@ links:
   - name:         Hi!!
     url:          /about
   - name:         Blog
-    url:          /archive.html
+    url:          /archive
     external:     true
   - name:         GitHub
     url:          http://github.com/harshalbot
