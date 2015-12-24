@@ -28,4 +28,3 @@ A few links that talk about both the shells :
 2. <http://ft.bewatermyfriend.org/comp/zshtalk.html>
 3. <https://www.reddit.com/r/linux/comments/1csl7c/bash_vs_zsh/>
 4. <http://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692>
-5. 
