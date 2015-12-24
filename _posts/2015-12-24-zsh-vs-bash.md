@@ -15,11 +15,18 @@ In terms of setting up both the shells from scratch, you can easily notice that 
 
 One more difference that I have read about the zsh and bash is that zsh ships with **_programmable autocompletion_**. One can also navigate the completion list and select the completion one wishes to use. Although bash now supports auto-complete via the _bash-completion_ package, this isn't navigable with keyboard and bash and the user has to type in the command themselves. 
 
-There is also the feature of command history in the zsh. Often, one has more than a single terminal running scripts and zsh alllows to scroll from the past written commands across terminals which makes the job a lot easier. Bash lacks this feature. 
+There is also the feature of command history in the zsh. Often, one has more than a single terminal running scripts and zsh alllows to scroll from the past written commands across terminals which makes the job a lot easier. ~~Bash lacks this feature.~~ **UPDATE: ** A reader told me that there is a feature by which you can add commands to the _.bashrc_ config file using the command 
+
+`shopt -s histappend                      # append to history, don't overwrite
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"`
+
+More about this can be read here : <http://askubuntu.com/questions/67283/is-it-possible-to-make-writing-to-bash-history-immediate>
 
 It is often said that zsh is faster than bash but that has not been proved yet, atleast for me. 
 
-Bash also lacks in floating-point math, such as this command `number=$((3.5 / 4.2))` won't work in bash. It doesn't have directory aliases that can shorten the script by a whole lot. Although many of the zsh features can be configured in bash and the fact that bash is available on every device makes it used a whole lot more, there are many zsh features that cannot be configured into bash. 
+Bash also lacks in floating-point math, such as this command 
+`number=$((3.5 / 4.2))` 
+won't work in bash. It doesn't have directory aliases that can shorten the script by a whole lot. Although many of the zsh features can be configured in bash and the fact that bash is available on every device makes it used a whole lot more, there are many zsh features that cannot be configured into bash. 
 
 
 A few links that talk about both the shells : 
