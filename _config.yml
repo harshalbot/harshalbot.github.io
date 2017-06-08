@@ -1,22 +1,69 @@
-title:            Harshal Gupta
-description:      A jekyll theme. Because I scribble.
-url:              # Site url, without a slash at the end.
-signoff:          # Harshal.
-disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
-facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
-google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: Harshal
+email: harshalgupta826@gmail.com
+description: 
+url: www.harshalgupta.me
 
-links:
- 
-  - name:         Blog
-    url:          /archive
-    external:     true
-  - name:         GitHub
-    url:          http://github.com/harshalbot
-    external:     true
-highlighter:      pygments
-permalink:        pretty
-markdown:         redcarpet
-redcarpet:
-  extensions:
-    - smart
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Asia/Kolkata
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: Harshalbot
+  avatar: 
+  job: "Insights @ GreyOrange"
+  bio: "Volunteer @headstarters • Previously @AxilorVentures | @EY_India • Everything Startups •"
+  email: harshalgupta826@gmail.com
+  disqus-shortname:
+  twitter: harshalbot
+  facebook: #username
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: harshalbot
+  gitlab: #username
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: harshalgupta
+  skype: #username
+  xing: #username
+  instagram: harshal826
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  500px: #username
+  codepen: #username

@@ -1,35 +1,67 @@
-<html>
-  <head>
-    <meta content='{{ page.title }} - {{ site.title }}' property='og:title' />
-    <title>{{ page.title }} - {{ site.title }}</title>
-    {% include head.html %}
-  </head>
-  <body>
-    {% include header.html %}
-    <div id='container'>
-      {% include links.html %}
-      {% include pages.html %}
-      <div class="content">
-        <section class='post'>
-          <h1 class="upcase">
-            <div class='date'>{{ page.date | date_to_string }}</div>
-            {{ page.title }}
-          </h1>
-          {{ content }}
-          {% include signoff.html %}
+---
+layout: default
+---
+
+<a class="btn" href= "{{ site.url }}/" >
+  Home
+</a>
+{% if page.image.feature %}
+<div class="post-image-feature">
+  <img class="feature-image" src=
+  {% if page.image.feature contains 'https' or page.image.feature contains 'http' %}
+  "{{ page.image.feature }}"
+  {% else %}
+  "{{ site.url }}/img/{{ page.image.feature }}"
+  {% endif %}
+  alt="{{ page.title }} feature image">
+
+  {% if page.image.credit %}
+  <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% endif %}
+</div><!-- /.image-wrap -->
+{% endif %}
 
 
-        </section>
-      </div>
-      {% if page.share == 'y' %}
-        {% include share.html %}
-      {% endif %}
+<div id="post">
+  <header class="post-header">
+    <h1 title="{{ page.title }}">{{ page.title }}</h1>
+    <span class="post-meta">
+      <span class="post-date">
+        {{ page.date | date: "%-d %b %Y" | upcase }}
+      </span>
+      •
+      {% include read_time.html %}
+    </span>
 
-      {% if page.disqus == 'y' %}
-        {% include disqus.html %}
-      {% endif %}
-      {% include links.html %}
-    </div>
-    {% include footer.html %}
-  </body>
-</html>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+</div>
+
+<div class="share-buttons">
+  <h6>Share on: </h6>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+    <li>
+      <a href="https://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}" class="hacker-news btn" title="Share on Hacker News"><i class="fa fa-hacker-news"></i><span> Hacker News</span></a>
+    </li>
+    <li>
+      <a href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+    </li>
+  </ul>
+</div><!-- end share-buttons -->
+
+{% if site.owner.disqus-shortname and page.comments == true %}
+<div id="disqus_thread"></div>
+{% include disqus.html %}
+{% endif %}
