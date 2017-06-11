@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sample Post1
+title: Sample Post2
 excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
 categories: [hello world]
 comments: true
