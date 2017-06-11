@@ -1,14 +1,10 @@
 ---
 layout: post
-title: "Indian Startups Last Week: Edition-1("
+title: "Indian Startups Last Week: Edition-1"
 excerpt: "The first edition of the Indian Startups newsletter where I curate the what went down in the ecosystem last week."
-categories: [paragraph, feature photo]
+categories: [newsletter]
 author: harshal
 comments: true
-image:
-  feature: https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?crop=entropy&dpr=2&fit=crop&fm=jpg&h=475&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1250
-  credit: Greg Rakozy
-  creditlink: https://unsplash.com/photos/oMpAz-DN-9I
 ---
 
 A nation of a billion stumbling around, thousands of companies and the startup hullabaloo. Let’s try to make sense of it all. I’m going to try and do a weekly wrap-up of all the buzz from the industry. The week's hottest news snippet remains the appointment of Urjit Patel as the Governor of Reserve Bank of India. The country has been busy with animated discussions about the pros and cons of his appointment and its effect on our economy. We shall however, go back to our startups.
