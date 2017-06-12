@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Indian Startups Last Week: Edition-2"
-excerpt: "The first edition of the Indian Startups newsletter where I curate the what went down in the ecosystem last week."
+excerpt: "The second edition of the Indian Startups newsletter where I curate the what went down in the ecosystem last week."
 categories: [newsletter]
 author: harshal
 comments: true
